@@ -162,6 +162,9 @@ const Projects = () => {
                     {project.name === 'Task-Flow' && (
                       <img src="/taskflowww.png" alt="task-flow" className="mt-4 mb-4 w-full h-40 object-cover rounded-lg" />
                     )}
+                    {project.name === 'My-portfolio' && (
+                      <img src="/myyyy.png" alt="task-flow" className="mt-4 mb-4 w-full h-40 object-cover rounded-lg" />
+                    )}
                     <CardTitle className="text-xl text-foreground group-hover:text-primary transition-colors mt-2">
                       {project.name}
                     </CardTitle>
@@ -183,6 +186,11 @@ const Projects = () => {
                     <CardDescription className="text-muted-foreground mb-2">
                       {project.name === 'Task-Flow'
                         ? "Task Flow is a clean and responsive task management app built with React, TypeScript, Tailwind CSS, and ShadCN UI. It allows users to add, delete, and update tasks in real-time with smooth transitions and dark mode support. The interface is intuitive, optimized for both desktop and mobile, and focuses on simplicity and performance."
+                        : ''}
+                    </CardDescription>
+                    <CardDescription className="text-muted-foreground mb-2">
+                      {project.name === 'My-portfolio'
+                        ? "My Portfolio is a fully responsive personal website showcasing my projects, skills, and contact information. Built with React, TypeScript, and Tailwind CSS, it features smooth animations, a light/dark mode toggle, and a clean modern design — crafted to reflect both creativity and technical skill in frontend development."
                         : ''}
                     </CardDescription>
                     <div className="flex flex-wrap gap-2 mb-4">
